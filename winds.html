@@ -2,9 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Web Challenge - Index</title>
+    <title>Web Challenge - Wind Speed</title>
 
-    
     <!-- Bring in our bootstrap stylesheet -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -19,12 +18,15 @@
   <body>
 
    <!-- Define the Navigation Bar --> 
+
     <nav class="navbar navbar-expand-lg navbar-blue">
-    <a class="navbar-brand" href="./index.html">Latitudes....</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="./index.html">Latitudes....</a>
+      
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
         </button>
-      
+
+       
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
      
 		<ul class="nav navbar-nav ml-auto">  
@@ -52,45 +54,25 @@
     </div>
     </nav>
 
-    <!-- Define the two primary items on the webpage - Summary and the Visualitzations area. -->
+    <!-- Define the two primary items on the webpage - Winds and the Visualitzations area. -->
 
     <div class="container">
         <div class="row row-grid">
             <div class="col-md-6">
                 <div class="box box-left">
                     <section id="intro">
-                        <h1>Summary</h1>
+                        <h1>Windiness</h1>
                         <hr>
                         <figure>
-                            <a target="_blank" href="Max_temp.png">
-                                <img id="viz-main" src="Max_temp.png" alt="Latitude of cities">
+                            <a target="_blank" href="Wind_Speed.png">
+                                <img id="viz-main" src="Wind_Speed.png" alt="Latitude vs. Wind Speed">
                             </a>
                         </figure>
 
                         <section id="summary">
-                            <p>This project utilizes Python, API’s, HTML and Bootstrap to try and answer  and present - 
-                                “What’s is the weather like as one moves near and far from the equator?”
+                            <p>No clustering or pattern of wind speed around the equator. The data appears to prove out
+                                the Coriolis Effect, where the latitude will impact the direction, but not the speed of the wind.
                             </p>
-
-                            <p> I utilized the Python WeatherPy library to find to gather data on ~550 cities Lat/Long, Cloudiness, 
-                                Temperature, Wind Speed and Humidity via the OpenWeatherAPI from a previous project.
-                                
-                            </p>
-
-                            <p>
-                                The dataframe is saved to an CSV and HTML and the data was analyzed across the global regions (Tropical Zone, Temperate Zone, and
-                                Polar Zone). The relationship between latitude and temperature/humidity/cloudiness/wind speed
-                                I utilize MatplotLib scatter plots listed below:
-                            </p>
-
-                            <ul>
-                                <li>Temperature (F) vs. Latitude</li>
-                                <li>Humidity (%) vs. Latitude</li>
-                                <li>Cloudiness (%) vs. Latitude</li>
-                                <li>Wind Speed (mph) vs. Latitude</li>
-
-                            </ul>
-
                         </section>
 
                     </section>
@@ -140,6 +122,7 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 </body>
